@@ -4,6 +4,7 @@ E-climate is an online platform which provides you easy access of knowledge rega
 
 
 ![Screenshot](./public/photos/homeimg.png?raw=true "Screenshot")
+![Screenshot](./public/photos/img2.png?raw=true "Screenshot")
 
 
 ## Features of the Website -
