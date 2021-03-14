@@ -9,6 +9,7 @@ E-climate is an online platform which provides you easy access of knowledge rega
 ## Features of the Website -
 
 #### User Side-
+- WebApp is fully mobile responsive. 
 - Feature of quiz with MCQ question including timer & shows detailed explanation of each question along with marks your achieved.
 - Can read & gain knowledge regarding climatic changes on latest updates section.
 - Have a section to post any kindof information related to climatic changes & environment.
