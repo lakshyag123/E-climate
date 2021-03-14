@@ -1,0 +1,66 @@
+<%- include('partials/register') %>
+<a href="/"><i class="fas fa-backward" style="font-size: 27px;color:#043908 ;"></i></a>
+<div class="login-box">
+	<h2>Register <i class="fas fa-user-plus"></i></h2>
+	<form action="/register" method="POST">
+    <% const rang = message === 'Successfully registered'?'hara':'lal' %>
+    <% if(rang == 'lal'){ %>
+    <div class="text-center inputfield terms" style="color: red;">
+      <% if(message === ''){ %>
+      <p></p>
+      <% } else {%>
+      <p></p><%= message %>
+      <% } %>
+
+    </div>
+    <% }else{ %>
+      <div class="text-center inputfield terms" style="color: green;">
+        <p></p><%= message %>
+      </div>
+      <% } %>
+		<div class="user-box">
+			<input type="text" name="fname"  required>
+			<label>Full Name</label>
+		</div>
+    <div class="user-box">
+			<input type="text" name="username"  required>
+			<label>Username</label>
+		</div>
+    <div class="user-box">
+     
+			<label><span style="font-size: 18px;">Gender</span></label>
+      <select name="gender" style="float: right; font-size: 18px;padding-left: 15px;">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+		</div>
+    <br><br><br>
+    <div class="user-box">
+			<input type="text" name="age"  required>
+			<label>Age</label>
+		</div>
+		<div class="user-box">
+			<input type="password" name="password" required> 
+			<label for="">Password</label> 
+		</div>
+    <div class="user-box">
+			<input type="password" name="confirm_password" required> 
+			<label for="">Confirm Password</label> 
+		</div>
+		<button type="submit" style="padding: 0 0 0 0;background: linear-gradient(#043908, #1F6B24);color: black;border-width: 0px;">
+      <a style="margin-top: 0px;margin-bottom: 0px; background: linear-gradient(#043908, #1F6B24);">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Register
+      </a>
+    </button>
+
+	</form>
+  <div style="margin-top: 15px;color: blanchedalmond;">
+  <strong>Already have an account? </strong><a href="/login" style="color:#22CC2D;">Sign In</a></div>
+</div>
+
+<%- include('partials/footer') %>

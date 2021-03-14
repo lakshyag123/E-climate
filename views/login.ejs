@@ -1,0 +1,32 @@
+<%- include('partials/register') %>
+<a href="/"><i class="fas fa-backward" style="font-size: 27px;color:#043908 ;"></i></a>
+
+<div class="login-box">
+	<h2>Login <i class="fas fa-sign-in-alt"></i></h2>
+	<form action="/login" method="POST">
+		<div class="user-box">
+			<input type="text" name="username" required> 
+			<label>Username</label>
+		</div>
+		<div class="user-box">
+			<input type="password" name="password" required> 
+			<label for="">Password</label> 
+		</div>
+    
+		<button type="submit" style="padding: 0 0 0 0;background: linear-gradient(#043908, #1F6B24);color: black;border-width: 0px;">
+      <a style="margin-top: 0px;margin-bottom: 0px; background: linear-gradient(#043908, #1F6B24);">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Login
+      </a>
+    </button>
+
+	</form>
+  <div style="margin-top: 15px;color: blanchedalmond;">
+  <strong>Do not have an account? </strong><a href="/register" style="color:#22CC2D;">Register</a></div>
+</div>
+
+
+<%- include('partials/footer') %>
